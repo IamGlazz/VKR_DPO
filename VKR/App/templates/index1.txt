@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<h1>Композиционные материалы</h1>
+ </head>
+ <body>
+<div class="table_wrapper" align="center">
+<table class="table_head" dir="ltr" border="3" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<th align="center">
+<p>Прогнозное значение параметра<br />&laquo;Соотношение матрица-наполнитель&raquo;</p>
+</th>
+</tr>
+<tr>
+<th>
+<p>Заполните ячейки и нажмите "Готово"</p>
+</th>
+</tr>
+</tbody>
+</table>
+<table border="3" width="500px" cellspacing="5" cellpadding="5" align="center" bgcolor="darkgreen">
+<tbody>
+<tr>
+<td>
+<p><label for="param1">Плотность, кг/м3</label></p>
+</td>
+<td><p><input name="param1" type="float" placeholder="Заполните значение плотности, кг/м3" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param2">Модуль упругости, ГПа</label></p></span></td>
+<td><p><input name="param2" type="float" placeholder="Заполните значение модуля упругости, ГПа" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param3">Количество отвердителя, м.%</label> </p></span></td>
+<td><p><input name="param3" type="float" placeholder="Заполните значение количества отвердителя, м.%" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param4">Содержание эпоксидных групп,%_2</label> </p></span></td>
+<td><p><input name="param4" type="float" placeholder="Заполните значение содержания эпоксидных групп,%_2" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param5">Температура вспышки, С_2</label></p></span></td>
+<td><p><input name="param5" type="float" placeholder="Заполните значение температуры вспышки, С_2" /></p></span></td>
+</tr>
+<tr>
+<td><p><label for="param6">Поверхностная плотность, г/м2</label> </p></span></td>
+<td><p><input name="param6" type="float" placeholder="Заполните значение поверхностной плотности, г/м2" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param7">Модуль упругости при растяжении, ГПа</label></p></span></td>
+<td><p><input name="param7" type="float" placeholder="Заполните значение модуля упругости при растяжении, ГПа" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param8">Прочность при растяжении, МПа</label></p></span></td>
+<td><p><input name="param8" type="float" placeholder="Заполните значение прочности при растяжении, МПа" /></p></td>
+</tr>
+<tr>
+<td><p><span style="color: #ffffff;"><label for="param9">Потребление смолы, г/м2</label></p></span></td>
+<td><p><input name="param9" type="float" placeholder="Заполните значение потребления смолы, г/м2" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param10">Угол нашивки, град</label> </p></span></td>
+<td><p><input name="param10" type="float" placeholder="Заполните значение угла нашивки, град" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param11">Шаг нашивки</label></p></span></td>
+<td><p><input name="param11" type="float" placeholder="Заполните значение шага нашивки" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param12">Плотность нашивки</label></p></span></td>
+<td><p><input name="param12" type="float" placeholder="Заполните значение плотности нашивки" /></p></td>
+</tr>
+</tbody>
+</table>
+<p><input type="submit" value="Готово" /></p>
+<p>Результат прогноза:</p><p>{% if message %} </p>
+<p>{{ message }}</p>
+<p>{% endif %} </p>
+</div>
+
+<div class = "footer">
+<p><em>Приложение разработал:</em></p><p><em><strong>Игорь Глазунов</strong> -&nbsp; слушатель курса &laquo;Data Science&raquo; </em></p> <p><em>Образовательного центра Московского государственного технического университета им. Н.Э. Баумана &copy;, </em></p> <p><em>2022 г.</em></p>
+</div>
+
+<style>
+h1 {
+	font-family: Calibry;
+	font-size: 5vh;
+	color: #ffffff;
+	text-align: Calibry;
+}
+p {
+	font-family: Lato;
+	font-size: 1.5vh;
+	color: #ffffff;
+	text-align: center;
+}
+body {
+	height: 100vh;
+	*/background: rgb(22,22,25);
+	background: linear-gradient(170deg, rgba(22,22,25,1) 0%, rgba(55,55,60,1) 46%, rgba(15,12,7,1) 100%);/*
+}
+
+.table_wrapper {
+	background: rgba(0,0,0,0.3);
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table_head {
+	align: center;
+	backdrop-filter: blur(1vh);
+	width: 30vw;
+}
+.footer
+{
+	margin-left: 10vh;
+}
+</style>
+ </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<Title>Прогноз соотношения матрица-наполнитель</Title>
+<h1>Прогноз соотношения матрица-наполнитель</h1>
+ </head>
+ <body>
+<div class="table_wrapper" align="center">
+
+<table class="table_head" dir="ltr" border="3" cellspacing="5" cellpadding="5">
+	<tbody>
+		<tr>
+			<th align="center">
+				<p>Прогнозное значение параметра<br />&laquo;Соотношение матрица-наполнитель&raquo;</p>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<p>Заполните ячейки и нажмите "Готово"</p>
+			</th>
+		</tr>
+	</tbody>
+</table>
+
+<form action="" method="post">
+
+<table class="table_body" border="3" cellspacing="5" cellpadding="5">
+	<tbody>
+		<tr>
+			<td>
+				<p><label for="param1">Плотность, кг/м3</label></p>
+			</td>
+			<td>
+				<p><input name="param1" type="float" placeholder="Значение плотности, кг/м3" /></p>
+			</td>
+		</tr>
+<tr>
+<td><p><label for="param2">Модуль упругости, ГПа</label></p></span></td>
+<td><p><input name="param2" type="float" placeholder="Значение модуля упругости, ГПа" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param3">Количество отвердителя, м.%</label> </p></span></td>
+<td><p><input name="param3" type="float" placeholder="Заполните значение количества отвердителя, м.%" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param4">Содержание эпоксидных групп,%_2</label> </p></span></td>
+<td><p><input name="param4" type="float" placeholder="Значение содержания эпоксидных групп,%_2" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param5">Температура вспышки, С_2</label></p></span></td>
+<td><p><input name="param5" type="float" placeholder="Значение температуры вспышки, С_2" /></p></span></td>
+</tr>
+<tr>
+<td><p><label for="param6">Поверхностная плотность, г/м2</label> </p></span></td>
+<td><p><input name="param6" type="float" placeholder="Значение поверхностной плотности, г/м2" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param7">Модуль упругости при растяжении, ГПа</label></p></span></td>
+<td><p><input name="param7" type="float" placeholder="Значение модуля упругости при растяжении, ГПа" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param8">Прочность при растяжении, МПа</label></p></span></td>
+<td><p><input name="param8" type="float" placeholder="Значение прочности при растяжении, МПа" /></p></td>
+</tr>
+<tr>
+<td><p><span style="color: #ffffff;"><label for="param9">Потребление смолы, г/м2</label></p></span></td>
+<td><p><input name="param9" type="float" placeholder="Значение потребления смолы, г/м2" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param10">Угол нашивки, град</label> </p></span></td>
+<td><p><input name="param10" type="float" placeholder="Значение угла нашивки, град" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param11">Шаг нашивки</label></p></span></td>
+<td><p><input name="param11" type="float" placeholder="Значение шага нашивки" /></p></td>
+</tr>
+<tr>
+<td><p><label for="param12">Плотность нашивки</label></p></span></td>
+<td><p><input name="param12" type="float" placeholder="Значение плотности нашивки" /></p></td>
+</tr>
+<tr>
+<td width="100%" colspan="2"><p><input type="submit" value="Готово"></p></td>
+</tr>
+	</tbody>
+</table>
+
+    </form>
+
+<table class="table_rezult" border="3" cellpadding="5" cellspacing="5">
+	<tbody>
+		<tr>
+			<td width="50%">
+				<p>Результат прогноза:</p>
+			</td>
+			<td width="50%">
+				<p>{% if message %}</p>
+				<p>{{ message }}</p>
+				<p>{% endif %}</p>
+
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+
+<div class = "footer">
+<p>Приложение разработал: <strong>Игорь Глазунов</strong> -&nbsp; слушатель курса &laquo;Data Science&raquo; Образовательного центра Московского государственного технического университета им. Н.Э. Баумана &copy;, 2022 г.</p>
+</div>
+
+<style type="text/css">
+h1 {
+	font-family: Calibri;
+	font-size: 5vh;
+	color: #ffffff;
+	text-align: Center;
+	text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+body {
+	height: 90vh;
+	background-image: url(https://i.postimg.cc/fLc74Phg/1.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+
+.table_wrapper {
+	background: rgba(0,0,0,0.6);
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table_head {
+	align: center;
+	width: 30vw;
+	font-family: Calibri;
+	font-size: 2vh !important;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: Center;
+}
+
+.table_body {
+	align: center;
+	backdrop-filter: blur(1vh);
+	width: 30vw;
+	font-family: Calibri;
+	font-weight: 300;
+	font-size: 1.5vh;
+	color: #ffffff;
+	text-align: Center;
+}
+
+.table_rezult {
+	align: center;
+	backdrop-filter: blur(1vh);
+	width: 30vw;
+	font-family: Calibri;
+	font-weight: 700;
+	font-size: 2vh;
+	color: #ffffff;
+	text-align: Center;
+}
+
+.footer
+{
+	margin-left: auto;
+	font-family: Calibri;
+	font-weight: 300;
+	font-size: 1.5vh;
+	color: #ffffff;
+	text-align: Center;
+	text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+</style>
